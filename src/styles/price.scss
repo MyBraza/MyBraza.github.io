@@ -1,0 +1,47 @@
+@import 'variables';
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  row-gap: 5px;
+  &__value {
+    font-family: Roboto Slab, serif;
+    font-size: 80px;
+    line-height: 0.8;
+
+    letter-spacing: -2px;
+  }
+  &__condition {
+    font-weight: bold;
+    font-size: 23px;
+  }
+}
+
+.price_dim {
+  @extend .price;
+  opacity: 0.5;
+  .price__value {
+    font-weight: 300;
+    font-size: 38px;
+
+    text-decoration: line-through;
+  }
+  .price__condition {
+    font-size: 15px;
+  }
+}
+
+.price_small {
+  @extend .price;
+  .price__value {
+    font-weight: 300;
+    font-size: 50px;
+  }
+  .price__condition {
+    font-size: 20px;
+    font-weight: normal;
+  }
+}

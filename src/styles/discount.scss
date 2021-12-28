@@ -1,0 +1,43 @@
+@import 'variables';
+
+.discount {
+  position: absolute;
+  top: -20px;
+  left: auto;
+  right: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 110px;
+  height: 119px;
+
+  background: url('images/discount-bg.svg') center no-repeat;
+  background-size: contain;
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    margin-bottom: 7px;
+  }
+  &__value {
+    font-weight: bold;
+    font-size: 30px;
+
+    letter-spacing: -0.75px;
+
+    margin-bottom: 3px;
+  }
+  &__condition {
+    font-size: 15px;
+    line-height: 24px;
+
+    color: $secondary-text-color-grayed;
+  }
+}

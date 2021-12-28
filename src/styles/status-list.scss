@@ -1,0 +1,27 @@
+@import 'variables';
+
+.status-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  margin-bottom: 25px;
+  &__item {
+    display: flex;
+    align-items: baseline;
+    column-gap: 8px;
+  }
+  &__name {
+    font-size: 15px;
+
+    color: $secondary-text-color-dim;
+  }
+  &__value {
+    font-size: 20px;
+    font-weight: bold;
+
+    color: $secondary-color;
+  }
+}

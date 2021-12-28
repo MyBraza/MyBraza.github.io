@@ -1,0 +1,80 @@
+@import 'variables';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  &__input {
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border: solid 2px $border-color;
+    background-color: $primary-color;
+  }
+  &__submit-button {
+    font-family: Open Sans SemiBold, sans-serif;
+    font-size: 15px;
+
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    padding: 25px;
+
+    background-color: $secondary-color;
+    color: $secondary-text-color;
+    border: none;
+  }
+  &__agreement {
+    display: flex;
+    column-gap: 15px;
+
+    line-height: 1.5;
+  }
+  &__checkbox-label {
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    color: $secondary-text-color-dim;
+    a {
+      text-decoration: none;
+    }
+  }
+  &__checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+
+    border: solid 1px $border-color;
+    cursor: pointer;
+
+    transition: all ease-in-out 100ms;
+
+    margin: 0;
+    &::before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: url('images/check.svg');
+      margin-bottom: -5px;
+      transform: scale(0);
+      transition: all ease-in-out 100ms;
+    }
+    &:checked {
+      background-color: $secondary-color;
+      border-color: transparent;
+      &::before {
+        transform: none;
+      }
+    }
+  }
+}

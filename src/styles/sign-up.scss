@@ -1,0 +1,45 @@
+@import 'variables';
+
+.sign-up {
+  display: flex;
+  align-items: stretch;
+
+  width: 1170px;
+
+  background-color: $primary-color;
+  box-shadow: $box-shadow;
+  &__prices {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+
+    width: 50%;
+    padding: 110px 0;
+    margin: 0;
+
+    background-color: $secondary-color;
+    color: $secondary-text-color;
+  }
+  &__form {
+    width: 50%;
+    min-height: 100%;
+    padding: 57px 130px 57px 85px;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 34px;
+
+    margin-bottom: 24px;
+  }
+}
+
+@import "discount";
+@import "price";
+
+@import "utp-list";
+@import "status-list";
+@import "form";

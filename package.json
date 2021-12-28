@@ -1,0 +1,42 @@
+{
+  "name": "skillboxtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyBraza/SkillboxTest.git"
+  },
+  "author": "Ismail Ajiev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MyBraza/SkillboxTest/issues"
+  },
+  "homepage": "https://github.com/MyBraza/SkillboxTest#readme",
+  "devDependencies": {
+    "cross-env": "7.0.3",
+    "css-loader": "5.2.6",
+    "eslint": "7.19.0",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-config-standard": "16.0.2",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-promise": "4.2.1",
+    "html-webpack-plugin": "5.3.1",
+    "prettier": "2.3.0",
+    "sass-loader": "12.1.0",
+    "style-loader": "2.0.0",
+    "webpack": "5.65.0",
+    "webpack-cli": "4.9.1",
+    "webpack-dev-server": "4.3.1"
+  },
+  "dependencies": {
+    "jquery": "3.6.0",
+    "node-sass": "6.0.1"
+  }
+}

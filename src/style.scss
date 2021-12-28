@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'reset';
+
+body {
+  background-color: $background-color;
+}
+
+main {
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}

@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": ["standard", "standard-jsx", "prettier", "prettier/react"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "react",
+    "react-hooks",
+    "prettier"
+  ],
+  "rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "overrides": [
+    {
+      "files": ["**/test.tsx"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}

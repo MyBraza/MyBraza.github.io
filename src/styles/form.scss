@@ -25,6 +25,8 @@
     color: $secondary-text-color;
     border: none;
 
+    cursor: pointer;
+
     @media screen and (min-width: 1280px) {
       margin-bottom: 10px;
     }
@@ -73,6 +75,9 @@
     transition: all ease-in-out 100ms;
 
     margin: 0;
+    @media screen and (max-width: 768px) {
+      border: solid 2px $border-color;
+    }
     &::before {
       display: flex;
       justify-content: center;
@@ -81,10 +86,17 @@
       margin-bottom: -5px;
       transform: scale(0);
       transition: all ease-in-out 100ms;
+      @media screen and (max-width: 768px) {
+        content: url("images/check-blue.svg");
+      }
     }
     &:checked {
       background-color: $secondary-color;
       border-color: transparent;
+      @media screen and (max-width: 768px) {
+        background-color: transparent;
+        border-color: $border-color;
+      }
       &::before {
         transform: none;
       }

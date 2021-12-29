@@ -8,6 +8,9 @@
   font-family: Open Sans, sans-serif;
 
   margin-bottom: 44px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 35px;
+  }
   &__item {
     position: relative;
 

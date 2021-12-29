@@ -10,6 +10,9 @@
     box-sizing: border-box;
     border: solid 2px $border-color;
     background-color: $primary-color;
+    &.invalid {
+      border-color: red;
+    }
   }
   &__submit-button {
     font-family: Open Sans SemiBold, sans-serif;
@@ -78,6 +81,9 @@
     @media screen and (max-width: 768px) {
       border: solid 2px $border-color;
     }
+    &.invalid {
+      border-color: red;
+    }
     &::before {
       display: flex;
       justify-content: center;
@@ -87,7 +93,7 @@
       transform: scale(0);
       transition: all ease-in-out 100ms;
       @media screen and (max-width: 768px) {
-        content: url("images/check-blue.svg");
+        content: url('images/check-blue.svg');
       }
     }
     &:checked {

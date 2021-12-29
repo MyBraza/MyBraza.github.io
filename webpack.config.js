@@ -14,7 +14,7 @@ module.exports = {
     hot: false
   },
   output: {
-    path: path.join(__dirname, '/static'),
+    path: path.join(__dirname, '/docs'),
     filename: 'bundle.js'
   },
   resolve: {

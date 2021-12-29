@@ -48,24 +48,39 @@
             </div>
             <form action="" class="form">
               <label>
-                <input type="text" class="form__input" placeholder="Имя" />
+                <input
+                  name="name"
+                  type="text"
+                  class="form__input"
+                  placeholder="Имя"
+                />
               </label>
               <label>
-                <input type="tel" class="form__input" placeholder="Телефон" />
+                <input
+                  name="tel"
+                  type="tel"
+                  class="form__input"
+                  placeholder="Телефон"
+                />
               </label>
               <label>
-                <input type="email" class="form__input" placeholder="Email" />
+                <input
+                  name="email"
+                  type="email"
+                  class="form__input"
+                  placeholder="Email"
+                />
               </label>
-              <button class="form__submit-button submit-button" type="submit">
-                Записаться
-              </button>
               <div class="form__agreement">
                 <input id="agreement" type="checkbox" class="form__checkbox" />
                 <label for="agreement" class="form__checkbox-label">
-                  Я согласен с условиями обработки <br />
+                  Я согласен с условиями обработки
                   <a href="/"> персональных данных </a>
                 </label>
               </div>
+              <button class="form__submit-button submit-button" type="submit">
+                Записаться
+              </button>
             </form>
           </div>
         </div>

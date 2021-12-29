@@ -7,16 +7,25 @@
   flex-direction: column;
 
   row-gap: 5px;
+  @media screen and (max-width: 768px){
+    row-gap: 10px;
+  }
   &__value {
     font-family: Roboto Slab, serif;
     font-size: 80px;
     line-height: 0.8;
 
     letter-spacing: -2px;
+    @media screen and (max-width: 768px){
+      font-size: 56px;
+    }
   }
   &__condition {
     font-weight: bold;
     font-size: 23px;
+    @media screen and (max-width: 768px){
+      font-size: 18px;
+    }
   }
 }
 
@@ -28,9 +37,13 @@
     font-size: 38px;
 
     text-decoration: line-through;
+    @media screen and (max-width: 768px){
+      font-size: 36px;
+    }
   }
   .price__condition {
     font-size: 15px;
+    font-weight: normal;
   }
 }
 
@@ -39,9 +52,15 @@
   .price__value {
     font-weight: 300;
     font-size: 50px;
+    @media screen and (max-width: 768px){
+      font-size: 40px;
+    }
   }
   .price__condition {
     font-size: 20px;
     font-weight: normal;
+    @media screen and (max-width: 768px){
+      font-size: 15px;
+    }
   }
 }

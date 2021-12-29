@@ -16,6 +16,9 @@
 
   background: url('images/discount-bg.svg') center no-repeat;
   background-size: contain;
+  @media screen and (max-width: 768px){
+    top: -50px;
+  }
   &__title {
     font-weight: bold;
     font-size: 14px;

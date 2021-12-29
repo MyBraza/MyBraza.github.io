@@ -24,12 +24,22 @@
     background-color: $secondary-color;
     color: $secondary-text-color;
     border: none;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 10px;
+    }
   }
   &__agreement {
     display: flex;
     column-gap: 15px;
 
     line-height: 1.5;
+    @media screen and (min-width: 1280px) {
+      order: 5;
+    }
+    @media screen and (max-width: 1280px) and (min-width: 768px) {
+      margin: 10px 0;
+    }
   }
   &__checkbox-label {
     font-family: Open Sans, sans-serif;
@@ -40,6 +50,9 @@
     color: $secondary-text-color-dim;
     a {
       text-decoration: none;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-right: 20px;
     }
   }
   &__checkbox {
